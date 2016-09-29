@@ -1,5 +1,5 @@
 import test = require('blue-tape');
-import {ChildProcess} from "child_process";
+import {ChildProcess} from 'child_process';
 
 import seleniumStandalone = require('selenium-standalone');
 
@@ -44,34 +44,34 @@ const baseStartConfig: seleniumStandalone.StartOptions = {
         baseURL: 'https://github.com/mozilla/geckodriver/releases/download'
         }
     }
-}
+};
 
-test("install with no params", (t) => {
+test('install with no params', (t) => {
     seleniumStandalone.install((err: Error): void => {
         t.equal(err, null);
         t.end();
     });
-})
+});
 
-test("install with params", (t) => {
+test('install with params', (t) => {
     seleniumStandalone.install(defaultConfig, (err: Error): void => {
         t.equal(err, null);
         t.end();
     });
-})
+});
 
-test("start with params", (t) => {
+test('start with params', (t) => {
     seleniumStandalone.start(baseStartConfig, (err: Error, child: ChildProcess): void => {
         t.equal(err, null);
         child.kill();
         t.end();
     });
-})
+});
 
-test("start with no params", (t) => {
+test('start with no params', (t) => {
     seleniumStandalone.start((err: Error, child: ChildProcess): void => {
         t.equal(err, null);
         child.kill();
         t.end();
     });
-})
+});
