@@ -1,7 +1,7 @@
 # Typed Selenium Standalone  [![Build Status](https://travis-ci.org/zelein/typed-selenium-standalone.svg?branch=master)](https://travis-ci.org/zelein/typed-selenium-standalone)
 
 
-The type definition for [`selenium-standalone`](https://github.com/vvo/selenium-standalone.git)
+The type definition for [`selenium-standalone`](https://github.com/vvo/selenium-standalone)
 
 ## LICENSE
 
