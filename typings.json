@@ -1,0 +1,13 @@
+{
+  "name": "selenium-standalone",
+  "main": "index.d.ts",
+  "homepage": "https://github.com/vvo/selenium-standalone",
+  "version": "5.7.2",
+  "globalDevDependencies": {
+    "mocha": "registry:env/mocha",
+    "node": "registry:env/node#6.0.0+20160918225031"
+  },
+  "devDependencies": {
+    "blue-tape": "registry:npm/blue-tape#0.2.0+20160723033700"
+  }
+}
